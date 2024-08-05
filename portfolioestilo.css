@@ -1,0 +1,163 @@
+
+/*Estilo prinicpal*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase; /* cambia a mayuscula */
+	font-weight: 500; /* grosor de la fuente */
+	padding-bottom: 50px; /* espacio abajo */
+    color: rgb(238, 13, 88) ;
+}
+
+h4 {
+	font-size: 20px;
+	text-transform: uppercase; 
+	padding-bottom: 20px;
+	font-weight: 500;
+    color: rgb(41, 41, 41);
+}
+
+p {
+	font-size: 16px;
+	margin: 10px 0; /*margen */
+	line-height: 1.7em; /* salto de linea */
+}
+
+a {
+	text-decoration: none; /* le saca el subrayado a los enlaces*/
+}
+
+
+.container {              /* para los margenes laterales */
+	margin: auto;
+	max-width: 1300px;
+	overflow: auto;
+	padding: 0 20px;
+}
+
+.lugar {
+	font-size: 16px;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 15px;
+	padding: 15px 40px; /*15 px refiere a superior e inferior. 40px a laterales*/
+	letter-spacing: 1px;
+}
+
+.btn-outline {
+	background: #ee0d58;
+	border: 5px solid #efff0d;
+	color: rgb(245, 245, 118);
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.btn-outline:hover {                    /*para cuando le pasas el mouse por encima*/
+	background: rgb(245, 245, 118);
+	color: rgb(238, 13, 88);
+}
+
+/* Navegacion */
+#navegacion {
+	overflow: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#navegacion a {              /*darle color de los enlaces*/
+	color: #000;
+}
+
+#navegacion .logo {
+	float: left;
+	padding-top: 10px;
+}
+
+#navegacion img {
+	height: 50px;
+}
+
+#navegacion ul {
+	list-style: none;     /*le saca los puntos a la lista*/
+	float: right;        /*manda la lista hacia la derecha*/
+}
+
+#navegacion ul li {        /*para acomodar los elementos de lista*/
+	float: left;
+}
+
+#navegacion ul li a {      /* para darle uniformidad a la lista*/
+	display: block;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Ventana */
+#ventana {
+	background: url(portada.png);
+	background-position: center;
+	background-size: cover;   /*cover hace que la imagen quede como portada*/
+    height: 600px;
+	text-align: center;
+	padding: 100px;
+}
+
+#ventana .btn {       /*para centrar el boton*/
+	margin-top: 300px;
+}
+
+/* Proyectos */
+#proyectos {
+	padding: 80px 0;
+}
+
+.proyectos-row {
+	display: flex;   /* hace que quede una imagen al lado de la otra */
+}
+
+.proyectos-row img {
+	width: 100%;
+}
+
+/* Yo */
+#sobremi {
+	padding: 80px 0;
+	background: rgb(245, 245, 118);
+}
+
+.sobremi-row {
+	display: flex;  
+}
+
+.sobremi-row-experiencia,
+.sobremi-row-yo {                  /*esto es para que me queden los dos bloques de textos separados pero en la misma linea*/
+	width: 50%;
+	padding-left: 50px;
+}
+
+/* Contacto */
+#contacto {
+	padding: 100px 0;
+}
+
+.contacto-row {
+	display: flex;
+}
+.contacto-row-icono {
+	width: 50%;
+	text-align: center;
+}
+
+.contacto-row-icono img {
+	height: 70px;
+}
