@@ -18,29 +18,21 @@ h2 {
 }
 
 h4 {
-	font-size: 20px;
+	font-size: 1.25em;
 	text-transform: uppercase; 
-	padding-bottom: 20px;
+	padding-bottom: 1.25em;
 	font-weight: 500;
     color: rgb(41, 41, 41);
 }
 
 p {
-	font-size: 16px;
-	margin: 10px 0; /*margen */
+	font-size: 1em;
+	margin: 0.625em 0; /*margen */
 	line-height: 1.7em; /* salto de linea */
 }
 
 a {
 	text-decoration: none; /* le saca el subrayado a los enlaces*/
-}
-
-
-.container {              /* para los margenes laterales */
-	margin: auto;
-	max-width: 1300px;
-	overflow: auto;
-	padding: 0 20px;
 }
 
 .lugar {
@@ -49,17 +41,18 @@ a {
 
 .btn {
 	display: inline-block;
-	font-size: 15px;
-	padding: 15px 40px; /*15 px refiere a superior e inferior. 40px a laterales*/
+	font-size: 1rem;
+	padding: 1rem 2.5rem; /*15 px refiere a superior e inferior. 40px a laterales*/
 	letter-spacing: 1px;
 }
 
 .btn-outline {
 	background: #ee0d58;
-	border: 5px solid #efff0d;
+	border: 0.3rem solid #efff0d;
 	color: rgb(245, 245, 118);
 	text-transform: uppercase;
 	font-weight: 500;
+
 }
 
 .btn-outline:hover {                    /*para cuando le pasas el mouse por encima*/
@@ -81,6 +74,7 @@ a {
 #navegacion .logo {
 	float: left;
 	padding-top: 10px;
+	width: 70%;
 }
 
 #navegacion img {
@@ -107,18 +101,20 @@ a {
 	background: url(portada.png);
 	background-position: center;
 	background-size: cover;   /*cover hace que la imagen quede como portada*/
-    height: 600px;
+    height: 50%;
+	width: auto;
 	text-align: center;
-	padding: 100px;
+	padding: 8%;
+	box-sizing: border-box;
 }
 
 #ventana .btn {       /*para centrar el boton*/
-	margin-top: 300px;
+	margin-top: 30%;
 }
 
 /* Proyectos */
 #proyectos {
-	padding: 80px 0;
+	padding: 5em 0;
 }
 
 .proyectos-row {
@@ -127,6 +123,7 @@ a {
 
 .proyectos-row img {
 	width: 100%;
+	height: auto;
 }
 
 /* Yo */
@@ -161,3 +158,29 @@ a {
 .contacto-row-icono img {
 	height: 70px;
 }
+.contenedor-principal {
+	width: 95%;
+	max-width: 2000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+@media screen and (max-width: 450px){
+	#ventana .btn {
+		margin-top: 58%;
+		font-weight: 500;
+		padding: 0.5rem 1.5rem;
+	}
+	#navegacion .logo {
+		width: 100%;
+	}
+}
+
+
+/*.container {              /* para los margenes laterales 
+	margin: auto;
+	max-width: 1300px;
+	overflow: auto;
+	padding: 0 20px;
+} */
